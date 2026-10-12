@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { serviceCategories } from '../data/services';
-import logoAustratech from '../assets/logo-austratech.png';
+import logoAustratech from '../assets/logo-austratech.jpeg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,6 @@ const Footer = () => {
         <div className="footer-brand">
           <Link to="/" className="footer-brand-logo" aria-label="Austratech Home">
             <img src={logoAustratech} alt="Austratech company logo" className="footer-logo-img" />
-            <span className="logo-text">Austra<span className="logo-highlight">tech</span></span>
           </Link>
           <p>
             Austratech is a technology and digital marketing company based in Australia,

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { serviceCategories } from '../data/services';
-import logoAustratech from '../assets/logo-austratech.png';
+import logoAustratech from '../assets/logo-austratech.jpeg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,7 +69,6 @@ const Navbar = () => {
       <nav className="navbar-container" role="navigation" aria-label="Main navigation">
         <Link to="/" className="navbar-logo" aria-label="Austratech Home">
           <img src={logoAustratech} alt="Austratech company logo" className="logo-img" />
-          <span className="logo-text">Austra<span className="logo-highlight">tech</span></span>
         </Link>
 
         <div className="navbar-links">

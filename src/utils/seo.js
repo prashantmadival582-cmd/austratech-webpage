@@ -1,11 +1,13 @@
 // SEO utility functions
 
+import logoAustratech from '../assets/logo-austratech.jpeg';
+
 export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   'name': 'Austratech',
   'url': 'https://austratech.com.au',
-  'logo': 'https://austratech.com.au/logo.png',
+  'logo': new URL(logoAustratech, 'https://austratech.com.au').href,
   'description': 'Austratech is a technology and digital marketing company based in Australia, delivering innovative digital solutions including web development, app development, digital marketing, AI solutions, and cloud services.',
   'address': {
     '@type': 'PostalAddress',
